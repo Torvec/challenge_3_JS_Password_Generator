@@ -7,9 +7,10 @@ The week 02 bootcamp challenge was to create a website from scratch with various
 ## Visuals
 
 
+
 ## Installation
 
-Visit the GitHub pages link to see the refactored version of the website: [JavaScript Password Generator](N/A)
+Visit the GitHub pages link to see the refactored version of the website: [JavaScript Password Generator](https://torvec.github.io/challenge_3_JS_Password_Generator/)
 
 ## Usage
 
@@ -30,7 +31,7 @@ N/A
 
 ## Features
 
--JavaScript Password Generator
+- JavaScript Password Generator
 
 ## How to Contribute
 
