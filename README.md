@@ -6,7 +6,7 @@ The week 03 bootcamp challenge was to create a password generator using JavaScri
 
 ## Visuals
 
-![HTML Example](sitescreenshot.png)
+![HTML Example](./siteScreenshot.png)
 
 ## Installation
 
