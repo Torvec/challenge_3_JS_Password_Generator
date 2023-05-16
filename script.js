@@ -23,16 +23,49 @@
 // WHEN the password is generated
 //    THEN the password is either displayed in an alert or written to the page
 
-// Assignment code here
-var specialChar = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-console.log(specialChar);
-var randomSpecialChar = Math.floor(Math.random() * specialChar.length);
-console.log(specialChar[randomSpecialChar]);
+var specialChar = ['!', '"', '#', '$', '%', '&', '\'', '\(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '\[', '\\', '\]', '^', '_', '`', '{', '|', '}', '~'];
+var upperLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var lowerLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var allChars = specialChar.concat(upperLetters, lowerLetters, numbers);
 
-var passwordMaxLength = 128;
-var passwordMinLength = 8;
- var generatePassword = "something"; // prompt("Is this thing on?");
+function pickPassLength(){
+    while(true) {
+        var theLength = prompt("Password length: Pick a number between 8 and 128");
+        if (theLength < 8 || theLength > 128) {
+            alert("The number you entered is too high or too low");
+            continue;
+        } else if (isNaN(theLength) === true) {
+            alert("You didn't put a number in!");
+            continue;
+        } else if (theLength === null) { // THIS DOESN'T DO ANYTHING
+            alert ("You didn't enter anything!");
+            continue;
+        } else {
+            alert("Your password length will be " + theLength + " characters long")
+            break;
+        }
+    }
+}
 
+function generatePassword(userSelectNum) {
+    // PROMPT USER TO PUT NUMBER IN AND STORE IT IN userSelectNum
+    userSelectNum = prompt("Pick a number between 8 and 128")
+    // CHECK IF IT IS WITHIN THE LIMITS
+    if (userSelectNum >= 8 && userSelectNum <= 128){
+        // ITERATE FROM 0 TO THE NUMBER THE USER INPUT AND USE RANDOM NUMBERS TO PICK FROM THE ENTIRE allChars ARRAY TO OUTPUT AS A STRING IN randomPass
+        var randomPass = '';// DECLARE EMPTY STRING
+        for(var i=0;i<userSelectNum;i++){
+                
+            randomPass += [allChars[Math.floor(Math.random(i) * allChars.length)]];
+        }
+        console.log("Your randomly generated password is: " + randomPass);
+    } else {
+        alert("That is not a number between 8 and 128");
+    }
+};
+// generatePassword();
+// pickPassLength();
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
