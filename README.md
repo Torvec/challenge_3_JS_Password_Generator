@@ -2,7 +2,7 @@
 
 ## Description
 
-The week 03 bootcamp challenge was to create a password generator using JavaScript with the following requirements: Use prompts for the user to be able to generate a random password with a length of 8 to 128 characters, with the user choosing what type of characters should be in the password (i.e. uppercase, lowercase, numbers, special characters, etc.).
+The week 03 bootcamp challenge was to create a password generator using JavaScript with the following requirements: Use prompts and confirms for the user to be able to generate a random password with a length of 8 to 128 characters, with the user choosing what type of characters should be in the password (i.e. uppercase, lowercase, numbers, special characters, etc.).
 
 ## Visuals
 
@@ -19,6 +19,7 @@ This page is used for grading purposes by the UC Berkley coding bootcamp staff.
 ## Credits
 
 - Starter Code: [GitHub Repo](https://github.com/coding-boot-camp/friendly-parakeet)
+- OWASP Special Character List: [OWASP Site](https://owasp.org/www-community/password-special-characters)
 - Edward Von Schondorf
 
 ## License
@@ -31,8 +32,7 @@ N/A
 
 ## Features
 
-- JavaScript Password Generator
-- Generate a password from 8 to 128 characters long using any characters of your choice (ABC, abc, 123, !@#, etc.)
+- JavaScript Random Password Generator
 
 ## How to Contribute
 
