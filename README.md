@@ -32,6 +32,7 @@ N/A
 ## Features
 
 - JavaScript Password Generator
+- Generate a password from 8 to 128 characters long using any characters of your choice (ABC, abc, 123, !@#, etc.)
 
 ## How to Contribute
 
@@ -39,4 +40,4 @@ N/A
 
 ## Project Status
 
-UNDER DEVELOPMENT
+Completed 16 May 2023
