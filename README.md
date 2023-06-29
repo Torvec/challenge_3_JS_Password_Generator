@@ -7,7 +7,7 @@ The week 03 bootcamp challenge was to create a password generator using JavaScri
 
 ## GitHub Pages
 
-Visit the GitHub pages link to see website: [Password Generator](https://torvec.github.io/challenge_3_JS_Password_Generator/)
+Visit the GitHub pages link to see website: [Password Generator](https://torvec.github.io/m3_password_generator/)
 
 ## Visuals
 
